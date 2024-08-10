@@ -1,3 +1,5 @@
+"use client"
+import react from "react";
 const LearnMore = () => {
   const learn = () => {
     window.open(
@@ -8,7 +10,7 @@ const LearnMore = () => {
   return (
     <div>
       <p>
-        Clicking on the <b>'Learn More'</b> button will take you to a page where
+        Clicking on the <b>Learn More</b> button will take you to a page where
         <br />
         you can understand the folder and file structure of Next.js.
       </p>

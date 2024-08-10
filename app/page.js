@@ -1,5 +1,6 @@
 "use client"
 import Head from "next/head";
+import react from "react";
 import styles from "./globals.css"
 import {useState} from "react"
 import LearnMore from "./Components/page";
