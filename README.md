@@ -21,7 +21,6 @@ Root Folder:
 - package-lock.json: Managing package dependencies.
 - package.json: Managing project metadata and dependencies.
 - postcss.config.mjs: PostCSS configuration file, optimizing CSS.
-- (link unavailable): Project documentation, explaining how the project works.
 - tailwind.config.mjs: Tailwind CSS configuration file, customizing the CSS framework.
 
 These files and folders define the basic structure of a Next.js project. With their help, you can build and deploy your website.

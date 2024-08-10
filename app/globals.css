@@ -1,4 +1,5 @@
 body {
+  cursor:none;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -8,51 +9,92 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh; 
-  text-align: center; 
+  text-align: center;  
 }
 
 h1 {
-  color: #0ca5cf; 
+  
+  color: white; 
+  text-shadow: 0 0 15px #2575fc, 0 0 30px #2575fc, 0 0 45px #2575fc;
+  color: linear-gradient(45deg, #2575fc, #6a11cb, #ff1493);
   transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
-  margin-top: 20px; 
-  margin-bottom: 10px; 
+  margin: 80px 0 20px 0;
   padding: 15px; 
   text-align: center;
- 
+  font-size: 3.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  white-space: nowrap; 
+  overflow: hidden; 
+  animation: typing 4s steps(40, end) 1s 1 normal both, blink 500ms step-end infinite;
+
 }
 
 h1:hover {
-  color: #d509b7e8; 
+  color: white; 
+  color: linear-gradient(45deg, #2575fc, #6a11cb, #ff1493);
   margin: 0;
   transform: scale(1.1);
   cursor: pointer;
   text-shadow: 0 0 15px #d509b7e8, 0 0 30px #d509b7e8, 0 0 45px #d509b7e8;
-} 
+}
+
+h4{
+  color: #e8e2e8;
+}
 
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #005bb5;
+  background-color:   #005bb5;
+  background: linear-gradient(45deg, #6a11cb, #2575fc, #ff1493);
   color: rgb(209, 200, 207);
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease,color 0.3s ease;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #a500a5;
+  color: white;
+  background: linear-gradient(45deg, #2575fc, #6a11cb, #ff1493);
   transform: scale(1.05);
 }
 
+
 p {
-  font-size: 18px;
+  font-size: 15px;
   color: #e0e0e0; 
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 5px;
   line-height: 1.6;
 }
+
+/* Keyframes for the typing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Keyframes for cursor blink effect */
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: #e0e0e0; }
+}
+
+/* Apply the typing animation to the paragraph */
+.typing-effect {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #e0e0e0;
+  white-space: nowrap; 
+  overflow: hidden; 
+  width: 0; 
+  animation: typing 4s steps(30, end) 1s 1 normal both, blink 500ms step-end infinite;
+}
+
 
 
